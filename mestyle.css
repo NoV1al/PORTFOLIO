@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #4a4a4a; 
+    background-color: #f9f4ef; 
+}
+
+/* Navbar */
+.navbar {
+    background-color: #d9c6b0; 
+    color: #4a4a4a; 
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+.navbar .nav-links a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: left; 
+    flex-wrap: wrap; 
+    padding: 60px 20px;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hero p {
+    max-width: 500px; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.hero .profile-photo {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: 30px; 
+    flex-shrink: 0;
+}
+
+.hero .profile-photo img {
+    max-width: 300px; 
+    border-radius: 50%;
+    position: absolute;    
+    top: 300px;
+    right: 200px;
+    border: 5px solid #4a4a4a; 
+    display: block; 
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.hero h2 span {
+    color:  #4a4a4a; 
+}
+
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #d9c6b0;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.hero .btn.secondary {
+    background-color:#d9c6b0;
+}
+
+
+
+
+/* Sections*/
+
+section {
+    padding: 20px 20px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+
+/* Contact Section */
+.contact a {
+    color: #b8946e;
+    text-decoration: none;
+} 
+
+/* Footer */
+.footer {
+    background: #d9c6b0;
+    color: #4a4a4a;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+/* Interests List */
+.about .container {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about p, .about blockquote, .about ul {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #4a4a4a; /* Matches the overall text color */
+}
+
+.about blockquote {
+    font-style: italic;
+    color: #b8946e; /* Highlight quote */
+    border-left: 4px solid #d9c6b0;
+    padding-left: 10px;
+}
+
+.about h3 {
+    margin-top: 20px;
+    color: #4a4a4a; /* Keeps titles consistent */
+}
+.interest-container {
+    display: flex;
+    gap: 15px; /* Reduced gap for compact layout */
+    overflow-x: auto; /* Enables horizontal scrolling for smaller screens */
+    padding: 10px 0;
+    scroll-snap-type: x mandatory; /* Smooth snapping effect */
+    justify-content: start;
+}
+
+.interest-container::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar for a cleaner look */
+}
+
+.interest-box {
+    background-color: #f7e8d6;
+    color: #4a4a4a;
+    border: 1px solid #d9c6b0;
+    border-radius: 15px; /* Slightly smaller border radius */
+    padding: 10px 20px; /* Reduced padding */
+    text-align: center;
+    min-width: 120px; /* Smaller width for boxes */
+    scroll-snap-align: center;
+    white-space: normal; /* Allows text wrapping */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly subtler shadow */
+    font-size: 14px; /* Smaller font size */
+    line-height: 1.5; /* Better text spacing */
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .interest-container {
+        justify-content: space-between;
+        overflow-x: visible; /* Disables scrolling on larger screens */
+    }
+    .interest-box {
+        min-width: 150px; /* Adjusts box size for desktop */
+    }
+}
+
+/* Skill Boxes Container */
+.skills-container {
+    display: flex;
+    gap: 15px; /* Reduced gap for compact layout */
+    overflow-x: auto; /* Enables horizontal scrolling for smaller screens */
+    padding: 10px 0;
+    scroll-snap-type: x mandatory; /* Smooth snapping effect */
+    justify-content: start;
+}
+
+.skills-container::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar for a cleaner look */
+}
+
+.skill-box {
+    background-color: #f7e8d6;
+    color: #4a4a4a;
+    border: 1px solid #d9c6b0;
+    border-radius: 15px; /* Slightly smaller border radius */
+    padding: 10px 20px; /* Reduced padding */
+    text-align: center;
+    min-width: 120px; /* Smaller width for boxes */
+    scroll-snap-align: center;
+    white-space: normal; /* Allows text wrapping */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly subtler shadow */
+    font-size: 14px; /* Smaller font size */
+    line-height: 1.5; /* Better text spacing */
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .skills-container {
+        justify-content: space-between;
+        overflow-x: visible; /* Disables scrolling on larger screens */
+    }
+    .skill-box {
+        min-width: 150px; /* Adjusts box size for desktop */
+    }
+}
