@@ -160,7 +160,7 @@ h2 {
 .about p, .about blockquote, .about ul {
     margin-bottom: 20px;
     line-height: 1.6;
-    color: #4a4a4a; /* Matches the overall text color */
+    color: #4a4a4a; 
 }
 
 .about blockquote {
@@ -172,34 +172,34 @@ h2 {
 
 .about h3 {
     margin-top: 20px;
-    color: #4a4a4a; /* Keeps titles consistent */
+    color: #4a4a4a; 
 }
 .interest-container {
     display: flex;
-    gap: 15px; /* Reduced gap for compact layout */
-    overflow-x: auto; /* Enables horizontal scrolling for smaller screens */
+    gap: 15px; 
+    overflow-x: auto; 
     padding: 10px 0;
-    scroll-snap-type: x mandatory; /* Smooth snapping effect */
+    scroll-snap-type: x mandatory;
     justify-content: start;
 }
 
 .interest-container::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar for a cleaner look */
+    display: none; 
 }
 
 .interest-box {
     background-color: #f7e8d6;
     color: #4a4a4a;
     border: 1px solid #d9c6b0;
-    border-radius: 15px; /* Slightly smaller border radius */
-    padding: 10px 20px; /* Reduced padding */
+    border-radius: 15px; 
+    padding: 10px 20px; 
     text-align: center;
-    min-width: 120px; /* Smaller width for boxes */
+    min-width: 120px; 
     scroll-snap-align: center;
-    white-space: normal; /* Allows text wrapping */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly subtler shadow */
-    font-size: 14px; /* Smaller font size */
-    line-height: 1.5; /* Better text spacing */
+    white-space: normal;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    line-height: 1.5; 
 }
 
 /* Responsive Layout */
@@ -216,39 +216,39 @@ h2 {
 /* Skill Boxes Container */
 .skills-container {
     display: flex;
-    gap: 15px; /* Reduced gap for compact layout */
-    overflow-x: auto; /* Enables horizontal scrolling for smaller screens */
+    gap: 15px; 
+    overflow-x: auto;
     padding: 10px 0;
-    scroll-snap-type: x mandatory; /* Smooth snapping effect */
+    scroll-snap-type: x mandatory; 
     justify-content: start;
 }
 
 .skills-container::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar for a cleaner look */
+    display: none; 
 }
 
 .skill-box {
     background-color: #f7e8d6;
     color: #4a4a4a;
     border: 1px solid #d9c6b0;
-    border-radius: 15px; /* Slightly smaller border radius */
-    padding: 10px 20px; /* Reduced padding */
+    border-radius: 15px;
+    padding: 10px 20px;
     text-align: center;
-    min-width: 120px; /* Smaller width for boxes */
+    min-width: 120px; 
     scroll-snap-align: center;
-    white-space: normal; /* Allows text wrapping */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly subtler shadow */
-    font-size: 14px; /* Smaller font size */
-    line-height: 1.5; /* Better text spacing */
+    white-space: normal; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-size: 14px; 
+    line-height: 1.5;
 }
 
 /* Responsive Layout */
 @media (min-width: 768px) {
     .skills-container {
         justify-content: space-between;
-        overflow-x: visible; /* Disables scrolling on larger screens */
+        overflow-x: visible; 
     }
     .skill-box {
-        min-width: 150px; /* Adjusts box size for desktop */
+        min-width: 150px; 
     }
 }
